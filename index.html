@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Ntando Mahlaba | Profile</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="profile-container">
+        <header>
+            <h1>Ntando Mahlaba</h1>
+            <p>Student | Future Tech Leader | HTML & CSS Enthusiast</p>
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm Ntando Mahlaba, dedicated learner with a growing expertise in web development
+                I'm currently exploring the exciting world of web development — learning how to build beautiful websites with HTML, CSS, and JavaScript
+            <div class="profile-picture">
+    <img src="My Picture.jpg">
+</div>
+            </p>
+
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>VB & sql and still learning html and css</li>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:ntando@example.com">bayandantando19@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p>© 2025 Ntando Mahlaba. All rights reserved.</p>
+        </footer>
+    </div>
+    <div class="clock-container">
+    <h2>Current Time:</h2>
+    <div id="clock">Loading...</div>
+</div>
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}:${seconds}`;
+        document.getElementById('clock').textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000); // update every second
+    updateClock(); // run it immediately on page load
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
